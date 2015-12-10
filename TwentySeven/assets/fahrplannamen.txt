@@ -1,0 +1,9 @@
+Hier sind die Fahrplannamen festgelegt. Die Reihenfolge wird nicht erkannt, sondern ist im Quellcode festgelegt. Die Anzahl sollte auch nicht variieren.
+fahrplan_werktag_hbfnachsch.txt
+fahrplan_werktag_schnachhbf.txt
+fahrplan_samstags_hbfnachsch.txt
+fahrplan_samstags_schnachhbf.txt
+fahrplan_sonntags_hbfnachsch.txt
+fahrplan_sonntags_schnachhbf.txt
+fahrplan_feiertags_hbfnachsch.txt
+fahrplan_feiertags_schnachhbf.txt

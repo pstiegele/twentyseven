@@ -1,0 +1,38 @@
+todo twentyseven:
+-datum einbauen (per Popup) neben TimePicker
+-Werktag/Samstag/Sonntag/Feiertag Unterstützung implementieren
+-detallierte Verbindungsansicht: neue Activity für Klick auf einzelne Verbindung: Verlauf der Fahrt, Verspätung (per Button: 2,5,10,15+min,eigene Eingabe), in NotificationBar, durchschnittliche Verspätung dieser Verbindung
+-Verlauf über zuletzt gesuchte Verbindungen (neue Activity)
+-neue Einstellungs / Statistik Activity bei Klick auf Copyright
+	-Einstellungen beinhalten: 
+					-Reihnfolge Stationen
+					-benutzerdefinierte TimepickerShortcuts
+					-Hilfe
+					-Stationen ausblenden
+					-
+-Hinweis auf Verbindungen die vlt nicht direkt die Station anfahren aber eine nahegelegene (z.b. Fahrt Sch->Hbf über Roonstraße, aber Suche nach Christuskirche->Hinweis)
+-Async Task machen beim erstmaligen Datenbank einlesen
+-lebenszyklus activitys genauer angucken und evtl anpassen
+-auf resultend /resultstart textview in result drücken und direkt ändern können (über spinner)
+-ListView sollte je nach Zeit Busfahrt einfärben, also Bus in 5min: orange, Bus vor 3min: rot, Bus in 15min: grün (evtl. auch mit Icon)
+-Busse bis vor 5min mit anzeigen
+-datum anzeigen auf mainactivity (restore) mit datum funktion machen
+-bugs finden und mögliche fehler ausschließen (falsches format in fahrplan etc.)
+-verbindung sharen können
+-widget bauen (HAHAHAHAHA)
+-Zwei restore verbindungen haben //vlt
+-list view kopieren (->in zwischenablage) können
+-ortung und so direkt haltestelle finden
+-verbindungen von morgen auch finden (z.b.) spät abends (folgt mit date() implementierung)
+-Benachrichtigungsleisten Einträge sollen die app öffnen mit der Suche und sollen sich erweitern lassen und weitere, spätere Verbindungen anzeigen.. 
+
+-Statistik soll beinhalten: Gesamte Anzahl Suchen, häufigste Haltestelle, seltenste Haltestelle, durchschnittliche Verspätung, max. Verspätung, Datenbank Version, häufigste gewählte Verbindung
+
+
+erledigt:
+
+-Tasten +5min, +1h einbauen neben TimePicker
+-app anpassen auf andere bildschirm größen (Wichtig!)
+-richtige ListView bauen mit text align left center middle
+-zurück button in result activity links oben
+-Datenbank Version in About

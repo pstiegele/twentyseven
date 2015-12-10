@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+        <item android:id="@+id/item2" android:title="@string/verlauf" android:showAsAction="never"></item>
+        <item android:id="@+id/item3" android:title="@string/statistik" android:showAsAction="never"></item>
+        <item android:id="@+id/item4" android:title="@string/einstellungen" android:showAsAction="never"></item>
+        <item android:id="@+id/item5" android:title="@string/hilfe" android:showAsAction="never"></item>
+        <item android:id="@+id/item6" android:title="@string/about" android:showAsAction="never"></item>
+   		
+   		<item android:id="@+id/item1" 
+        android:title="@string/search" 
+        android:menuCategory="system" 
+        android:showAsAction="always" 
+        android:icon="@android:drawable/ic_menu_send">
+    	</item>
+    
+    
+
+</menu>

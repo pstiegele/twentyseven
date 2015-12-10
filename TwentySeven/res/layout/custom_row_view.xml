@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingTop="10dip" >
+ 
+    <TextView
+        android:id="@+id/item_abfahrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:text="20:00"
+        android:textColor="#C20000"
+        android:textSize="18sp"
+        android:minHeight="7dp"
+        android:textStyle="bold" />
+ 
+    <TextView
+        android:id="@+id/item_ankunft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="21:00" />
+ 
+    <TextView
+        android:id="@+id/item_dauer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".33"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:text="00:16" />
+ 
+</LinearLayout>

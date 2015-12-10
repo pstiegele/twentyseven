@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TwentySeven</string>
+    <string name="menu_settings">Settings</string>
+    <string name="lastsearch">Zuletzt gesucht:</string>
+    <string name="lastsearchrestore">Wiederholen</string>
+    <string name="newsearch">Neue Suche:</string>
+    <string name="copyright">(&#169;) Paul Stiegele</string>
+    <string name="copyright2">Linie 27 (Koblenz Hbf - KO-Asterstein)</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="search">Suche</string>
+    <string name="contentdescriptionpfeil">nach</string>
+    <string name="abouttwentsvn">Twentyseven &#8211; Linie 27 is written by Paul Stiegele.\n\nIf you have questions please contact us at www.paul&#8211;stiegele.de or via mail at accpaul23@gmail.com \n\nTwentyseven uses Google Analytics.\n\n\n Copyright &#169; Paul Stiegele 2012&#8211;2014 \n all rights reserved.</string>
+    <string name="startstation">Abfahrtsort:</string>
+    <string name="endstation">Ankunftsort:</string>
+    <string name="startresult">Abfahrt:</string>
+    <string name="endresult">Ankunft:</string>
+    <string name="durationresult">Dauer:</string>
+    <string name="version">1</string>
+    <string name="dbname">fahrplandb</string>
+    <string name="now">Jetzt</string>
+
+    <string-array name="create">
+        <item>      create table hbfsch(
+        id integer primary key autoincrement,
+        hst1 int,
+        hst2 int,
+        hst3 int,
+        hst4 int,
+        hst5 int,
+        hst6 int,
+        hst7 int,
+        hst8 int,
+        werktag int(1),
+        samstag int(1),
+        sonntag int(1),
+        feiertag int(1)
+        
+      )</item>
+        <item>      create table schhbf(
+        id integer primary key autoincrement,
+        hst1 int,
+        hst2 int,
+        hst3 int,
+        hst4 int,
+        hst5 int,
+        hst6 int,
+        hst7 int,
+        hst8 int,
+        werktag int(1),
+        samstag int(1),
+        sonntag int(1),
+        feiertag int(1)
+        
+      )</item>
+        <item>      create table lastsearch(
+        id integer primary key autoincrement,
+        start int,
+        ende int,
+        date long,
+        wartezeit int
+      )</item>
+<item>      create table lasttake(
+        id integer primary key autoincrement,
+        verbindungsid integer(10),
+        richtung varchar(10),
+        abfahrt int(3),
+        ankunft int(3),
+        timestamp int(30),
+        wartezeit int(5),
+        wochentag int(2)
+      )
+</item>
+        <item>      create table haltestellen(
+        id integer primary key autoincrement,
+        name varchar(255),
+        anzahlstart int(10),
+        anzahlend int(10)
+      )  </item>
+        <item>      create table database(
+        id integer primary key autoincrement,
+        version int(10),
+        uniqueid int(10),
+        anzahlsuchen int(10)
+      )  </item>
+        <item>      create table fahrplanpfad(
+        id integer primary key autoincrement,
+        pfad varchar(255),
+        richtung int(1),
+        tag int(1)
+      )  </item>
+    </string-array>
+
+    <string name="string_before10min">-10min (-1h)</string>
+    <string name="string_in30min">+30min (+3h)</string>
+    <string name="string_in1hour">+1h (reset)</string>
+    <string name="title_activity_tupel">Verbindungsansicht</string>
+    <string name="action_settings">Settings</string>
+    <string name="uhrzeit">Uhrzeit:</string>
+    <string name="haltestelle">Haltestelle:</string>
+    <string name="verlauf">Verlauf</string>
+    <string name="statistik">Statistik</string>
+    <string name="einstellungen">Einstellungen</string>
+    <string name="hilfe">Hilfe</string>
+    <string name="about">Über</string>
+    <string name="startsearch">Suchen</string>
+    <string name="title_activity_verlauf">Verlauf</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_statistik">Statistik</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_about">About</string>
+
+</resources>

@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+         <TextView
+        android:id="@+id/lastsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/lastsearch" />
+
+         <TextView
+             android:id="@+id/lastsearchtime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="3dp"
+             android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/lastsearchrestore"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:minHeight="38dip"
+            android:minWidth="44dip"
+            android:layout_below="@+id/lastsearchverbindung"
+            android:drawableRight="@android:drawable/ic_menu_revert"
+            android:drawablePadding="15dp"
+            android:text="@string/lastsearchrestore"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/startsearch"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lastsearchverbindung"
+            android:drawableRight="@drawable/pfeil_twentyseven"
+            android:drawablePadding="15dp"
+            android:minHeight="38dip"
+            android:minWidth="44dip"
+            android:text="@string/startsearch" />
+
+        <LinearLayout
+            android:id="@+id/lastsearchverbindung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+           	android:layout_below="@+id/lastsearch"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lastsearchstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:contentDescription="@string/contentdescriptionpfeil"
+                android:src="@drawable/pfeil_twentyseven" />
+
+            <TextView
+                android:id="@+id/lastsearchend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/beschriftung"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.50"
+                android:text="@string/startstation" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.49"
+                android:text="@string/endstation" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/rahmen_unter_beschriftung"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:layout_alignBottom="@+id/beschriftung"
+            android:background="@color/BLACK" />
+
+        <View
+            android:id="@+id/verticalline"
+            android:layout_width="0.5dp"
+            android:layout_height="215dp"
+            android:layout_below="@+id/beschriftung"
+            android:layout_centerHorizontal="true"
+            android:background="@color/BLACK" />
+
+        <LinearLayout
+            android:id="@+id/radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:baselineAligned="false" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="215dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+                </RadioGroup>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="fill_parent"
+                android:layout_height="215dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/RadioButton01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+                    <RadioButton
+                        android:id="@+id/radioButton08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="21sp" />
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/rahmen_unter_radio"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:layout_alignBottom="@id/radio"
+            android:background="@color/BLACK" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/middle" >
+
+        <LinearLayout
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:id="@+id/timeshortcuts"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/Now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/now" />
+
+                <Button
+                    android:id="@+id/before10min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/string_before10min" />
+
+                <Button
+                    android:id="@+id/in30min"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/string_in30min" />
+
+                <Button
+                    android:id="@+id/in1hour"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/string_in1hour" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingTop="-2dp"
+   	android:gravity="center">
+
+    <ImageView
+        android:id="@+id/listview_Haltestellenpunkt"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/listview_abfahrtszeit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:minHeight="7dp"
+        android:text="18:35"
+        android:textColor="#C20000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+ 
+    <TextView
+        android:id="@+id/listview_haltestellenname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Schützenplatz"
+        android:textSize="18sp" />
+ 
+</LinearLayout>

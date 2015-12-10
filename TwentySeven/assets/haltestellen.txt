@@ -1,0 +1,2 @@
+Ausgewählte Haltestellen der Linie 27 die benutzt werden. Die ersten 4 Haltestellen werden in der App hervorgehoben.
+Schützenplatz,RM-Halle,Stadttheater,Zentralplatz,Löhr-Center,Christuskirche,Roonstraße,Koblenz Hbf

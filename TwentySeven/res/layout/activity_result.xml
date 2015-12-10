@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    tools:context=".ResultActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/resultsearchtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultsearchtime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/resultstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/contentdescriptionpfeil"
+                android:src="@drawable/pfeil_twentyseven" />
+
+            <TextView
+                android:id="@+id/resultend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listview_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_result"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/tabellenueberschrift_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".33"
+                android:text="@string/startresult" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/endresult" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".33"
+                android:gravity="right"
+                android:text="@string/durationresult" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linie_ueberschrift"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tabellenueberschrift_result"
+            android:background="@color/BLACK" />
+
+        <LinearLayout
+            android:id="@+id/lastsearchverbindung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linie_ueberschrift"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

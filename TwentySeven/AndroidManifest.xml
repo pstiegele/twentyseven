@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.paulsapp.twentyseven"
+    android:versionCode="3"
+    android:versionName="1.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="de.paulsapp.twentyseven.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" >
+        </uses-library>
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:value="598.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:value="598.0dip" />
+
+        <activity
+            android:name="de.paulsapp.twentyseven.DetailActivity"
+            android:label="@string/title_activity_tupel"
+            android:parentActivityName="de.paulsapp.twentyseven.ResultActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.ResultActivity" />
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.Verlauf"
+            android:label="@string/title_activity_verlauf"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.Statistik"
+            android:label="@string/title_activity_statistik"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.paulsapp.twentyseven.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="de.paulsapp.twentyseven.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.paulsapp.twentyseven.MainActivity" />
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
